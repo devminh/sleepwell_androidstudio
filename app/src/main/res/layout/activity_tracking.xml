@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_two"
+    android:orientation="vertical"
+
+    >
+    <!-- Here you put the rest of your current view-->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sleep tracking"
+        android:textColor="#E0FBFC"
+        android:textSize="35dp"
+        android:fontFamily="@font/quicksand"
+
+        />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Start to sleep"
+        android:id="@+id/start_sleep"
+        android:layout_gravity="center"
+        android:onClick="startSleeping"
+        android:background="@drawable/my_border"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_startsleep_time"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#E0FBFC"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Wake up"
+        android:id="@+id/wake_up"
+        android:layout_gravity="center"
+        android:onClick="wakeUp"
+        android:background="@drawable/my_border"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_wakeup_time"
+        android:textColor="#E0FBFC"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0FBFC"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sleep statistic:"
+        android:textColor="#E0FBFC"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_sleep_avg"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#E0FBFC"
+        />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/warning_sleep"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/radius_border"
+
+            />
+
+    
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggestion from Sleepwell : "
+        android:textColor="#E0FBFC"
+        android:textSize="25dp"
+        android:id="@+id/suggest_header"
+
+
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/suggest_sleep"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@drawable/radius_border"
+        android:textColor="#a9d171"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day1to7"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="#E0FBFC"
+        />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/BarChart"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#E0FBFC"
+        android:layout_marginTop="15dp"
+
+        />
+
+
+
+</LinearLayout>
+
+</ScrollView>

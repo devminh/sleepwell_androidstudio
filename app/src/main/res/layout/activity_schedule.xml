@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_two"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="I have to wake up at ..."
+        android:textColor="#E0FBFC"
+        android:textSize="35dp"
+        android:fontFamily="@font/quicksand"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E0FBFC"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+    >
+
+
+        <TimePicker
+            android:id="@+id/timepicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:timePickerMode="spinner"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:fontFamily="@font/quicksand"
+        android:id="@+id/calculate_now"
+        android:layout_gravity="center"
+        android:onClick="ScheduleOnClick"
+        android:textColor="#010101"
+        android:textStyle="bold"
+        android:background="@drawable/my_border"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rela_schedule"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_cycle_wake"
+            android:textSize="35dp"
+            android:textColor="#ACFCD9"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/quicksand"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind me"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/set_alarm_first"
+            android:onClick="SetReminderFirst"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ACFCD9"
+            android:layout_height="wrap_content"
+            android:id="@+id/second_cycle_wake"
+            android:textSize="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/first_cycle_wake"
+            android:fontFamily="@font/quicksand"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind me"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/set_alarm_first"
+            android:id="@+id/set_alarm_second"
+            android:onClick="SetReminderSecond"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/third_cycle_wake"
+            android:textColor="#ACFCD9"
+            android:layout_marginLeft="10dp"
+            android:textSize="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/second_cycle_wake"
+            android:fontFamily="@font/quicksand"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind me"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/set_alarm_second"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/set_alarm_third"
+            android:onClick="SetReminderThird"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourth_cycle_wake"
+            android:layout_marginTop="20dp"
+            android:textColor="#ACFCD9"
+            android:textSize="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/third_cycle_wake"
+            android:fontFamily="@font/quicksand"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Remind me"
+            android:id="@+id/set_alarm_fourth"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/set_alarm_third"
+            android:onClick="SetReminderFourth"
+            />
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

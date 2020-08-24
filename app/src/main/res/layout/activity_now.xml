@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_one">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#E0FBFC"
+        android:textSize="35dp"
+        android:text="If I sleep now, the best times to wake up are at ..."
+        android:fontFamily="@font/quicksand"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:fontFamily="@font/quicksand"
+        android:id="@+id/calculate_now"
+        android:layout_gravity="center"
+        android:onClick="CalculateOnClick"
+        android:textColor="#010101"
+        android:textStyle="bold"
+        android:background="@drawable/my_border"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rela_now"
+            android:visibility="invisible"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/first_cycle"
+                android:textSize="35dp"
+                android:textColor="#ACFCD9"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/quicksand"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set alarm"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/set_alarm_first"
+                android:onClick="SetAlarmFirst"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#ACFCD9"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand"
+                android:id="@+id/second_cycle"
+                android:textSize="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/first_cycle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set alarm"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/set_alarm_first"
+                android:id="@+id/set_alarm_second"
+                android:onClick="SetAlarmSecond"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/third_cycle"
+                android:textColor="#ACFCD9"
+                android:fontFamily="@font/quicksand"
+                android:layout_marginLeft="10dp"
+                android:textSize="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/second_cycle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set alarm"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/set_alarm_second"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/set_alarm_third"
+                android:onClick="SetAlarmThird"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fourth_cycle"
+                android:layout_marginTop="20dp"
+                android:textColor="#ACFCD9"
+                android:textSize="35dp"
+                android:fontFamily="@font/quicksand"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/third_cycle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Set alarm"
+                android:id="@+id/set_alarm_fourth"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/set_alarm_third"
+                android:onClick="SetAlarmFourth"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fifth_cycle"
+                android:layout_marginTop="20dp"
+                android:textSize="35dp"
+                android:fontFamily="@font/quicksand"
+                android:textColor="#ACFCD9"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/fourth_cycle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Set alarm"
+                android:id="@+id/set_alarm_fifth"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/set_alarm_fourth"
+                android:onClick="SetAlarmFifth"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sixth_cycle"
+                android:fontFamily="@font/quicksand"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ACFCD9"
+                android:textSize="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/fifth_cycle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set alarm"
+                android:id="@+id/set_alarm_sixth"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/set_alarm_fifth"
+                android:onClick="SetAlarmSixth"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
